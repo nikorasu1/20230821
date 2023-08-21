@@ -1,0 +1,241 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo J.A.P</title>
+</head>
+<body>
+    <script lang="JavaScript">
+        var p, pc, players, num, i1,i2;
+
+        pc = 1;
+        i1 = 0;
+        i2 = 100
+
+        players = parseFloat(window.prompt("Quantos jogadores irão jogar (entre 2 e 5)", "2"));
+
+        num = Math.floor(Math.random() * 100 + 1);
+
+        if(players == 2)
+        {
+         
+            do
+
+            {
+
+                {   
+                    do
+                    {
+                        p = parseFloat(window.prompt("Jogador "+ pc + " ,informe um número entre "+ i1 + "e" + i2));
+                    }
+                    while (p<i1 | p>i2)
+                
+                    if (p == num)
+
+                    {  
+                        document.write("Parabéns jogador"+ pc + ", você venceu!");
+                    }
+
+                    else if (p<num)
+
+                    {
+                        if (p>i1 &  p<i2)
+                        {
+                            i1 = p;
+                        }
+                        ++pc;
+
+                        if (pc>players)
+                        {
+                            pc = 1;
+                        }
+                    }
+
+                    else if (p>num)
+                
+                    {
+                        if (p>num &  p<i2)
+                        {
+                            i2 = p;
+                        }
+
+                        ++pc;
+                        if (pc>players)
+                        {
+                            pc = 1;
+                        }
+                    }
+                }
+
+            }
+            while(p!=num)
+
+        }
+        
+        else if(players == 3)
+        {
+         
+            do
+
+            {
+
+                {   
+                    do
+                    {
+                        p = parseFloat(window.prompt("Jogador "+ pc + " informe um número entre "+ i1 + "e" + i2));
+                    }
+                    while (p<i1 | p>i2)
+                
+                    if (p == num)
+
+                    {  
+                        document.write("Parabéns jogador"+ pc + ", você venceu!");
+                    }
+
+                    else if (p<num)
+
+                    {
+                        if (p>i1 &  p<i2)
+                        {
+                            i1 = p;
+                        }
+                        ++pc;
+
+                        if (pc>players)
+                        {
+                            pc = 1;
+                        }
+                    }
+
+                    else if (p>num)
+                
+                    {
+                        if (p>num &  p<i2)
+                        {
+                            i2 = p;
+                        }
+
+                        ++pc;
+                        if (pc>players)
+                        {
+                            pc = 1;
+                        }
+                    }
+                }
+
+            }
+            while(p!=num)
+        }
+
+        else if(players == 4)
+        {
+         
+            do
+
+            {
+
+                {   
+                    do
+                    {
+                        p = parseFloat(window.prompt("Jogador "+ pc + " informe um número entre "+ i1 + "e" + i2));
+                    }
+                    while (p<i1 | p>i2)
+                
+                    if (p == num)
+
+                    {  
+                        document.write("Parabéns jogador"+ pc + ", você venceu!");
+                    }
+
+                    else if (p<num)
+
+                    {
+                        if (p>i1 &  p<i2)
+                        {
+                            i1 = p;
+                        }
+                        ++pc;
+
+                        if (pc>players)
+                        {
+                            pc = 1;
+                        }
+                    }
+
+                    else if (p>num)
+                
+                    {
+                        if (p>num &  p<i2)
+                        {
+                            i2 = p;
+                        }
+
+                        ++pc;
+                        if (pc>players)
+                        {
+                            pc = 1;
+                        }
+                    }
+                }
+
+            }
+            while(p!=num)
+        }
+
+        else if(players == 5)
+        {
+         
+            do
+
+            {
+
+                {   
+                    do
+                    {
+                        p = parseFloat(window.prompt("Jogador "+ pc + " informe um número entre "+ i1 + "e" + i2));
+                    }
+                    while (p<i1 | p>i2)
+                
+                    if (p == num)
+
+                    {  
+                        document.write("Parabéns jogador"+ pc + ", você venceu!");
+                    }
+
+                    else if (p<num)
+
+                    {
+                        if (p>i1 &  p<i2)
+                        {
+                            i1 = p;
+                        }
+                        ++pc;
+
+                        if (pc>players)
+                        {
+                            pc = 1;
+                        }
+                    }
+
+                    else if (p>num)
+                
+                    {
+                        if (p>num &  p<i2)
+                        {
+                            i2 = p;
+                        }
+
+                        ++pc;
+                        if (pc>players)
+                        {
+                            pc = 1;
+                        }
+                    }
+                }
+
+            }
+            while(p!=num)
+        }
+
+    </script>
+</body>
+</html>
